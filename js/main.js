@@ -1,36 +1,55 @@
 /**
- * Ganemos.net - Main Interactive JavaScript
- * Handles Navigation, Mobile Dropdown Menu, Installation Guide Tabs, Download Link Handlers & QR Code Generation
+ * Ganemos.net - Main Interactive JavaScript (BetF4 Layout Adaptation)
+ * Handles Header Scroll, Mobile Menu, Games Category Filter, FAQ Accordion, Download Modal & QR
  */
 
 // ==========================================
-// CONFIGURACIÓN DE URLS Y ARCHIVOS DE DESCARGA
-// (Modifica estas variables con tus enlaces o archivos reales)
+// CONFIGURACIÓN DE URLS Y ARCHIVOS
 // ==========================================
 const CONFIG = {
-  // URL del Panel Administrativo (se abre en nueva pestaña)
+  // Enlace al Panel Administrativo
   ADMIN_URL: 'http://admin.ganemos.net',
 
-  // Rutas relativas o absolutas a los archivos de instalación
-  // Coloca tus archivos dentro de una carpeta 'downloads' o coloca la URL directa aquí
+  // Enlace a Taquilla / POS Web
+  TAQUILLA_URL: 'http://taquilla.ganemos.net',
+
+  // Enlace de Contacto WhatsApp para Solicitud de Demos
+  DEMO_WHATSAPP: 'https://wa.me/584120000000?text=Hola,%20deseo%20solicitar%20una%20demo%20de%20Ganemos.net',
+
+  // Rutas relativas o URLs directas a los ejecutables
   WINDOWS_EXE_PATH: 'downloads/GanemosDesktop_Installer.exe',
   ANDROID_APK_PATH: 'downloads/GanemosMobile_App.apk'
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  initAdminLinks();
+  initConfigLinks();
   initHeaderScroll();
   initMobileMenu();
-  initInstallationTabs();
+  initGamesFilter();
+  initFaqAccordion();
   initDownloadModal();
   generateApkQRCode();
 });
 
-/* Configurar Enlaces Administrativos */
-function initAdminLinks() {
-  const adminElements = document.querySelectorAll('.admin-link-target');
-  adminElements.forEach(el => {
+/* Configurar Enlaces de la Aplicación */
+function initConfigLinks() {
+  // Enlaces de Acceso Administrativo
+  document.querySelectorAll('.admin-link-target').forEach(el => {
     el.setAttribute('href', CONFIG.ADMIN_URL);
+    el.setAttribute('target', '_blank');
+    el.setAttribute('rel', 'noopener noreferrer');
+  });
+
+  // Enlaces de Ir a Taquilla
+  document.querySelectorAll('.taquilla-link-target').forEach(el => {
+    el.setAttribute('href', CONFIG.TAQUILLA_URL);
+    el.setAttribute('target', '_blank');
+    el.setAttribute('rel', 'noopener noreferrer');
+  });
+
+  // Enlaces de Solicitud de Demo / WhatsApp
+  document.querySelectorAll('.demo-link-target').forEach(el => {
+    el.setAttribute('href', CONFIG.DEMO_WHATSAPP);
     el.setAttribute('target', '_blank');
     el.setAttribute('rel', 'noopener noreferrer');
   });
@@ -38,7 +57,7 @@ function initAdminLinks() {
 
 /* Header Scroll Effect */
 function initHeaderScroll() {
-  const header = document.querySelector('.header');
+  const header = document.querySelector('.main-header');
   if (!header) return;
 
   window.addEventListener('scroll', () => {
@@ -58,12 +77,11 @@ function initMobileMenu() {
 
   if (!mobileToggle || !navMenu) return;
 
-  // Toggle Dropdown
   mobileToggle.addEventListener('click', (e) => {
     e.stopPropagation();
     navMenu.classList.toggle('active');
     mobileToggle.classList.toggle('active');
-    
+
     const icon = mobileToggle.querySelector('i');
     if (icon) {
       if (navMenu.classList.contains('active')) {
@@ -74,14 +92,12 @@ function initMobileMenu() {
     }
   });
 
-  // Cerrar al hacer clic en un enlace
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       closeMobileMenu();
     });
   });
 
-  // Cerrar al hacer clic fuera del menú
   document.addEventListener('click', (e) => {
     if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
       closeMobileMenu();
@@ -98,22 +114,49 @@ function initMobileMenu() {
   }
 }
 
-/* Installation Guide Tabs */
-function initInstallationTabs() {
-  const tabBtns = document.querySelectorAll('.tab-btn');
-  const tabContents = document.querySelectorAll('.tab-content');
+/* Games / Lotteries Category Filter */
+function initGamesFilter() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const gameCards = document.querySelectorAll('.game-card');
 
-  tabBtns.forEach(btn => {
+  if (!filterBtns.length) return;
+
+  filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      const targetTab = btn.getAttribute('data-tab');
+      const category = btn.getAttribute('data-filter');
 
-      tabBtns.forEach(b => b.classList.remove('active'));
-      tabContents.forEach(c => c.classList.remove('active'));
-
+      filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      const activeContent = document.getElementById(`tab-${targetTab}`);
-      if (activeContent) {
-        activeContent.classList.add('active');
+
+      gameCards.forEach(card => {
+        const cardCat = card.getAttribute('data-category');
+        if (category === 'all' || category === cardCat) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+}
+
+/* FAQ Accordion Toggle */
+function initFaqAccordion() {
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const header = item.querySelector('.faq-header');
+    if (!header) return;
+
+    header.addEventListener('click', () => {
+      const isOpen = item.classList.contains('active');
+
+      // Cerrar otros abiertos
+      faqItems.forEach(i => i.classList.remove('active'));
+
+      // Abrir el actual si no estaba abierto
+      if (!isOpen) {
+        item.classList.add('active');
       }
     });
   });
@@ -157,10 +200,9 @@ function initDownloadModal() {
       modalText.textContent = 'Tu instalador de Ganemos Desktop (.exe) se está descargando. Abre el ejecutable una vez completado.';
     } else {
       modalTitle.textContent = 'Iniciando descarga APK Android';
-      modalText.textContent = 'Descargando el archivo (.apk) para celulares Android. Si tu dispositivo lo solicita, permite la instalación de fuentes desconocidas.';
+      modalText.textContent = 'Descargando la aplicación (.apk) para celulares Android. Recuerda permitir instalaciones de fuentes desconocidas si tu dispositivo lo requiere.';
     }
 
-    // Simulador de Progreso e Inicios de Descarga
     let progress = 0;
     const interval = setInterval(() => {
       progress += Math.floor(Math.random() * 25) + 20;
@@ -169,10 +211,10 @@ function initDownloadModal() {
         clearInterval(interval);
         setTimeout(() => {
           triggerActualDownload(type);
-        }, 400);
+        }, 350);
       }
       progressBar.style.width = `${progress}%`;
-    }, 200);
+    }, 180);
   }
 
   function closeModal() {
@@ -192,7 +234,7 @@ function initDownloadModal() {
   }
 }
 
-/* Lightweight Vector QR Code Generator */
+/* Lightweight Vector QR Code Generator for APK */
 function generateApkQRCode() {
   const qrContainer = document.getElementById('qrCodeBox');
   if (!qrContainer) return;
@@ -242,4 +284,3 @@ function generateApkQRCode() {
   `;
   qrContainer.innerHTML = svgQR;
 }
-

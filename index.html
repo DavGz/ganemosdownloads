@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ganemos.net | Descargas de Apps & Acceso Administrativo - Whitelabel</title>
-  <meta name="description" content="Landing oficial de descargas de Ganemos.net. Descarga la aplicación de escritorio para Windows, la APK para celular Android y accede al portal administrativo.">
+  <title>Ganemos.net | Tu Sistema de Apuestas y Loterías Confiable</title>
+  <meta name="description" content="Ganemos.net - Tu sistema de apuestas deportivas y loterías confiable. Descarga las aplicaciones para Windows y Android, accede a taquillas y panel administrativo.">
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/glogo.png">
@@ -22,15 +22,38 @@
 </head>
 <body>
 
-  <!-- Background Ambient Glows (Strictly overflow-hidden container) -->
+  <!-- Background Ambient Glows -->
   <div class="bg-blobs-container">
     <div class="bg-ambient-blob blob-1"></div>
     <div class="bg-ambient-blob blob-2"></div>
     <div class="bg-ambient-blob blob-3"></div>
   </div>
 
-  <!-- Header / Navigation -->
-  <header class="header">
+  <!-- Header Top Bar (BetF4 style) -->
+  <div class="header-top-bar">
+    <div class="container header-top-container">
+      <div class="top-info">
+        <a href="tel:+584120000000" class="top-info-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+58 412-0000000</span>
+        </a>
+        <a href="mailto:contacto@ganemos.net" class="top-info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>contacto@ganemos.net</span>
+        </a>
+      </div>
+
+      <ul class="top-socials">
+        <li><a href="#" class="demo-link-target" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#" title="Telegram"><i class="fa-brands fa-telegram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
     <div class="container nav-wrapper">
       <a href="#" class="logo-container">
         <img src="assets/images/logolarge.png" alt="Ganemos.net Logo" class="logo-img">
@@ -38,22 +61,21 @@
 
       <ul class="nav-menu">
         <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-        <li><a href="#descargas" class="nav-link">Descargas Apps</a></li>
-        <li><a href="#admin" class="nav-link">Acceso Administrativo</a></li>
-        <li><a href="#plataforma" class="nav-link">Plataforma</a></li>
-        <li><a href="#instalacion" class="nav-link">Guía de Instalación</a></li>
-        <li class="mobile-admin-item" style="display: none;">
-          <a href="http://admin.ganemos.net" target="_blank" rel="noopener noreferrer" class="nav-link admin-link-target" style="background: rgba(255,42,42,0.2); border-color: rgba(255,42,42,0.5); color: #fff;">
-            <span><i class="fa-solid fa-user-shield" style="margin-right: 0.5rem; color: var(--brand-yellow);"></i> Panel Administrativo</span>
-            <i class="fa-solid fa-arrow-right"></i>
+        <li><a href="#descargas" class="nav-link">Descargar</a></li>
+        <li><a href="#loterias" class="nav-link">Loterías & Deportes</a></li>
+        <li><a href="#faq" class="nav-link">Preguntas</a></li>
+        <li><a href="http://taquilla.ganemos.net" target="_blank" rel="noopener noreferrer" class="nav-link taquilla-link-target">Ir a Taquilla</a></li>
+        <li style="display: none;" class="mobile-admin-item">
+          <a href="http://admin.ganemos.net" target="_blank" rel="noopener noreferrer" class="nav-link admin-link-target" style="color: var(--brand-yellow);">
+            <span><i class="fa-solid fa-user-shield"></i> Acceso Administrativo</span>
           </a>
         </li>
       </ul>
 
       <div class="nav-actions">
-        <a href="http://admin.ganemos.net" target="_blank" rel="noopener noreferrer" class="btn btn-admin header-admin-btn admin-link-target">
-          <i class="fa-solid fa-user-shield btn-icon"></i>
-          <span>Acceso Admin</span>
+        <a href="http://admin.ganemos.net" target="_blank" rel="noopener noreferrer" class="btn btn-admin admin-link-target">
+          <i class="fa-solid fa-user"></i>
+          <span>Administrativo</span>
         </a>
         <button class="mobile-toggle" aria-label="Abrir menú">
           <i class="fa-solid fa-bars"></i>
@@ -62,96 +84,85 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="inicio" class="hero">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="hero-badge-pulse"></span>
-          <span>Plataforma Whitelabel Oficial</span>
+  <!-- Banner / Hero Section (BetF4 Style Adaptation) -->
+  <section id="inicio" class="hero-banner">
+    <div class="container hero-banner-grid">
+      <div class="hero-banner-content">
+        <div class="hero-tagline">
+          ¡TU SISTEMA DE APUESTAS CONFIABLE!
         </div>
-        <h1 class="hero-title">
-          La Plataforma Definitiva de <span class="gradient-text">Apuestas & Loterías</span>
-        </h1>
-        <p class="hero-description">
-          Descarga las aplicaciones oficiales para PC Windows y celulares Android. Diseñadas para alta velocidad, estabilidad de conexión y soporte completo para impresoras térmicas en bancas de lotería y agencias.
+        <div class="hero-title-group">
+          <h1>Bienvenido a <img src="assets/images/logolarge.png" alt="Ganemos.net Logo Inline" class="logo-inline"></h1>
+          <h2>Rapidez, estabilidad y confianza en las apuestas</h2>
+        </div>
+
+        <p class="hero-banner-text">
+          Únete a nosotros y disfruta de las mejores comisiones, impresión térmica ultra rápida y facilidad de uso. Accede desde cualquier dispositivo con nuestro sistema 100% online y aplicaciones nativas.
         </p>
 
-        <div class="hero-buttons">
-          <a href="#descargas" class="btn btn-primary btn-lg" data-download-type="windows">
-            <i class="fa-brands fa-windows btn-icon"></i>
-            <span>Descargar Windows (.exe)</span>
+        <div class="hero-cta-buttons">
+          <a href="http://taquilla.ganemos.net" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg taquilla-link-target">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <span>Ir a Taquilla</span>
           </a>
-          <a href="#descargas" class="btn btn-secondary btn-lg" data-download-type="android">
-            <i class="fa-brands fa-android btn-icon"></i>
-            <span>Descargar APK Móvil</span>
+          <a href="http://admin.ganemos.net" target="_blank" rel="noopener noreferrer" class="btn btn-admin btn-lg admin-link-target">
+            <i class="fa-solid fa-user-shield"></i>
+            <span>Administrativo</span>
           </a>
-        </div>
-
-        <div class="hero-stats">
-          <div class="stat-item">
-            <h3>99.9%</h3>
-            <p>Disponibilidad</p>
-          </div>
-          <div class="stat-item">
-            <h3>24/7</h3>
-            <p>Operatividad</p>
-          </div>
-          <div class="stat-item">
-            <h3>Ultra Fast</h3>
-            <p>Impresión de Tickets</p>
-          </div>
+          <a href="#descargas" class="btn btn-secondary btn-lg">
+            <i class="fa-solid fa-download"></i>
+            <span>Descargar Apps</span>
+          </a>
         </div>
       </div>
 
-      <!-- Hero Visual Card -->
+      <!-- Hero Visual Card Mockup -->
       <div class="hero-visual">
-        <div class="hero-card-container">
-          <div class="hero-preview-header">
-            <img src="assets/images/logolarge.png" alt="Ganemos Logo Mini" class="hero-preview-logo">
-            <div class="status-badge">
-              <span class="status-dot"></span>
-              <span>Servidores En Vivo</span>
+        <div class="hero-mockup-card">
+          <div class="mockup-header">
+            <img src="assets/images/logolarge.png" alt="Ganemos Logo" class="mockup-logo">
+            <div class="mockup-live-tag">
+              <i class="fa-solid fa-circle" style="font-size: 0.5rem;"></i> Sistema En Vivo
             </div>
           </div>
 
-          <div class="hero-preview-body">
-            <div class="preview-app-item">
-              <div class="app-info-meta">
-                <div class="app-icon-wrapper">
+          <div class="mockup-list">
+            <div class="mockup-item">
+              <div class="mockup-item-left">
+                <div class="mockup-item-icon">
                   <i class="fa-brands fa-windows"></i>
                 </div>
-                <div class="app-text">
+                <div class="mockup-item-info">
                   <h4>Ganemos Desktop</h4>
                   <span>Windows 10 / 11 • v2.4.0</span>
                 </div>
               </div>
-              <a href="#" class="btn-mini-download" data-download-type="windows" title="Descargar ejecutable Windows">
+              <a href="#descargas" class="btn-mini-download" data-download-type="windows" title="Descargar ejecutable Windows">
                 <i class="fa-solid fa-arrow-down"></i>
               </a>
             </div>
 
-            <div class="preview-app-item">
-              <div class="app-info-meta">
-                <div class="app-icon-wrapper">
+            <div class="mockup-item">
+              <div class="mockup-item-left">
+                <div class="mockup-item-icon">
                   <i class="fa-brands fa-android"></i>
                 </div>
-                <div class="app-text">
+                <div class="mockup-item-info">
                   <h4>Ganemos Mobile APK</h4>
                   <span>Android 7.0+ • v2.4.0</span>
                 </div>
               </div>
-              <a href="#" class="btn-mini-download" data-download-type="android" title="Descargar APK Celular">
+              <a href="#descargas" class="btn-mini-download" data-download-type="android" title="Descargar APK Celular">
                 <i class="fa-solid fa-arrow-down"></i>
               </a>
             </div>
 
-            <div class="preview-app-item">
-              <div class="app-info-meta">
-                <div class="app-icon-wrapper" style="background: rgba(255,42,42,0.15); color: var(--brand-red);">
+            <div class="mockup-item">
+              <div class="mockup-item-left">
+                <div class="mockup-item-icon" style="background: rgba(255,42,42,0.15); color: var(--brand-red);">
                   <i class="fa-solid fa-shield-halved"></i>
                 </div>
-                <div class="app-text">
+                <div class="mockup-item-info">
                   <h4>Panel Administrativo</h4>
                   <span>Portal Web Seguro</span>
                 </div>
@@ -166,86 +177,155 @@
     </div>
   </section>
 
-  <!-- Downloads Section -->
-  <section id="descargas" class="section-padding">
+  <!-- Feature Grid Section ("DESCUBRE GANEMOS.NET") -->
+  <section class="section-padding" style="background: var(--bg-secondary);">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">
-          <i class="fa-solid fa-download"></i> Centro de Descargas
-        </span>
-        <h2 class="section-title">Instala la App en Tu Dispositivo</h2>
-        <p class="section-subtitle">
-          Elige la plataforma correspondiente para comenzar a gestionar apuestas, loterías y vender tickets de manera rápida y segura.
-        </p>
+        <h2>DESCUBRE GANEMOS.NET</h2>
+        <p>En Ganemos.net, nos enorgullece ofrecer un sistema de apuestas innovador y confiable, diseñado con pasión, simplicidad y máxima velocidad para nuestros usuarios y agencias.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-box-icon">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <h4>INNOVACIÓN CONSTANTE</h4>
+          <p>En Ganemos.net, siempre estamos actualizando y mejorando nuestro sistema para ofrecerte la mejor experiencia de apuestas y cuotas en tiempo real.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-box-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h4>SEGURIDAD Y CONFIANZA</h4>
+          <p>Tu tranquilidad es nuestra prioridad. Ganemos.net utiliza tecnología SSL avanzada en seguridad para proteger tus datos, tickets y transacciones.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-box-icon">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h4>SOPORTE 24/7 EN LÍNEA</h4>
+          <p>Nuestro equipo de soporte especializado está disponible 24 horas al día para ayudarte con cualquier consulta o gestión técnica que requieras.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-box-icon">
+            <i class="fa-solid fa-gauge-high"></i>
+          </div>
+          <h4>FACILIDAD DE USO & VELOCIDAD</h4>
+          <p>Diseñamos nuestro sistema para ser intuitivo y veloz, permitiendo emitir e imprimir tickets en impresoras térmicas en cuestión de segundos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Games / Lotteries Worked Section ("LOTERIAS TRABAJADAS") -->
+  <section id="loterias" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>LOTERÍAS & DEPORTES TRABAJADOS</h2>
+        <p>Amplia cobertura de jugadas en vivo, sorteos diarios y líneas de sportsbook competitivas.</p>
+      </div>
+
+      <ul class="games-filter">
+        <li><button class="filter-btn active" data-filter="all">Todos</button></li>
+        <li><button class="filter-btn" data-filter="animalitos">Animalitos</button></li>
+        <li><button class="filter-btn" data-filter="triples">Triples</button></li>
+        <li><button class="filter-btn" data-filter="deportes">Deportes</button></li>
+      </ul>
+
+      <div class="games-grid">
+        <!-- Card 1 -->
+        <div class="game-card" data-category="animalitos">
+          <div class="game-card-body">
+            <span class="game-card-category"><i class="fa-solid fa-paw"></i> Lotería Animalitos</span>
+            <h3 class="game-card-title">Zoológico Activo & La Granjita</h3>
+            <p class="game-card-desc">Sorteos diarios con liquidación automática de premios e impresión instantánea de comprobantes.</p>
+          </div>
+          <div style="padding: 0 1.8rem 1.8rem 1.8rem;">
+            <a href="http://taquilla.ganemos.net" target="_blank" rel="noopener noreferrer" class="btn btn-primary taquilla-link-target" style="width: 100%;">
+              <span>Jugar Ahora <i class="fa-solid fa-circle-chevron-right"></i></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="game-card" data-category="triples">
+          <div class="game-card-body">
+            <span class="game-card-category"><i class="fa-solid fa-clover"></i> Lotería Triples</span>
+            <h3 class="game-card-title">Triples Nacionales</h3>
+            <p class="game-card-desc">Resultados oficiales al instante, jugadas con signo zodiacal y límites parametrizables por agencia.</p>
+          </div>
+          <div style="padding: 0 1.8rem 1.8rem 1.8rem;">
+            <a href="http://taquilla.ganemos.net" target="_blank" rel="noopener noreferrer" class="btn btn-primary taquilla-link-target" style="width: 100%;">
+              <span>Jugar Ahora <i class="fa-solid fa-circle-chevron-right"></i></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="game-card" data-category="deportes">
+          <div class="game-card-body">
+            <span class="game-card-category"><i class="fa-solid fa-trophy"></i> Sportsbook</span>
+            <h3 class="game-card-title">Apuestas Deportivas & Parleys</h3>
+            <p class="game-card-desc">Líneas en vivo para Fútbol, Béisbol MLB, Baloncesto NBA y combinaciones parley ilimitadas.</p>
+          </div>
+          <div style="padding: 0 1.8rem 1.8rem 1.8rem;">
+            <a href="http://taquilla.ganemos.net" target="_blank" rel="noopener noreferrer" class="btn btn-primary taquilla-link-target" style="width: 100%;">
+              <span>Jugar Ahora <i class="fa-solid fa-circle-chevron-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Downloads Section -->
+  <section id="descargas" class="section-padding" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2>CENTRO DE DESCARGAS OFICIALES</h2>
+        <p>Instala nuestras aplicaciones nativas para PC Windows y celulares Android para operar con la máxima velocidad de impresión y estabilidad.</p>
       </div>
 
       <div class="downloads-grid">
         <!-- Windows Card -->
-        <div class="download-card featured">
-          <span class="card-badge">Escritorio POS</span>
-          <div class="download-header">
+        <div class="download-card">
+          <div>
             <div class="download-icon">
               <i class="fa-brands fa-windows"></i>
             </div>
-            <div class="download-title-group">
-              <h3>App para Windows</h3>
-              <p>Instalador oficial para PC / Escritorio</p>
+            <h3>Ganemos Desktop (Windows)</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.2rem;">
+              Instalador ejecutable para PC y puntos de venta (POS). Soporte nativo para impresoras térmicas USB/Serial.
+            </p>
+            <div style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 1.5rem;">
+              <span>Versión 2.4.0 • Windows 10/11 (64-bit)</span>
             </div>
           </div>
-
-          <ul class="download-features">
-            <li><i class="fa-solid fa-circle-check"></i> Impresión térmica de alta velocidad (USB / Serial)</li>
-            <li><i class="fa-solid fa-circle-check"></i> Modo punto de venta (POS) y pantalla completa</li>
-            <li><i class="fa-solid fa-circle-check"></i> Actualizaciones automáticas del sistema</li>
-            <li><i class="fa-solid fa-circle-check"></i> Conexión redundante ultra estable</li>
-          </ul>
-
-          <div class="download-meta-info">
-            <span>Versión: 2.4.0</span>
-            <span>Tamaño: ~42.5 MB</span>
-            <span>S.O.: Win 10 / 11 (64-bit)</span>
-          </div>
-
           <button class="btn btn-primary btn-lg" data-download-type="windows" style="width: 100%;">
             <i class="fa-solid fa-download"></i>
-            <span>Descargar para Windows (.exe)</span>
+            <span>Descargar ejecutable (.exe)</span>
           </button>
         </div>
 
-        <!-- Android APK Card -->
+        <!-- Android Card -->
         <div class="download-card">
-          <span class="card-badge" style="background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4);">Android APK</span>
-          <div class="download-header">
-            <div class="download-icon" style="color: #10b981;">
+          <div>
+            <div class="download-icon" style="color: #10b981; background: rgba(16, 185, 129, 0.15);">
               <i class="fa-brands fa-android"></i>
             </div>
-            <div class="download-title-group">
-              <h3>App Móvil (APK)</h3>
-              <p>Para celulares y terminales portátiles POS</p>
-            </div>
-          </div>
+            <h3>Ganemos Mobile (Android APK)</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.2rem;">
+              Aplicación móvil para celulares Android y terminales táctiles. Soporte para impresoras térmicas Bluetooth.
+            </p>
 
-          <!-- QR Code section -->
-          <div class="qr-container">
-            <div class="qr-box" id="qrCodeBox">
-              <!-- SVG QR generated via JS -->
+            <div style="display: flex; align-items: center; gap: 1rem; background: rgba(0,0,0,0.3); padding: 0.8rem; border-radius: 10px; margin-bottom: 1.5rem;">
+              <div class="qr-box" id="qrCodeBox"></div>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">Escanea este QR desde tu teléfono para la descarga directa APK.</span>
             </div>
-            <div class="qr-text">
-              <strong>Escanear con el celular</strong>
-              Escanea el código QR desde tu cámara Android para iniciar la descarga directa de la APK.
-            </div>
-          </div>
-
-          <ul class="download-features">
-            <li><i class="fa-solid fa-circle-check"></i> Soporte para impresoras térmicas Bluetooth</li>
-            <li><i class="fa-solid fa-circle-check"></i> Interfaz táctil intuitiva y veloz</li>
-            <li><i class="fa-solid fa-circle-check"></i> Bajo consumo de batería y datos móviles</li>
-          </ul>
-
-          <div class="download-meta-info">
-            <span>Versión: 2.4.0</span>
-            <span>Tamaño: ~24.8 MB</span>
-            <span>S.O.: Android 7.0+</span>
           </div>
 
           <button class="btn btn-secondary btn-lg" data-download-type="android" style="width: 100%;">
@@ -257,172 +337,97 @@
     </div>
   </section>
 
-  <!-- Administrative Access Highlight Section -->
-  <section id="admin" class="section-padding admin-section">
+  <!-- FAQ Section (BetF4 Accordion Style) -->
+  <section id="faq" class="section-padding">
     <div class="container">
-      <div class="admin-card">
-        <div class="admin-info">
-          <span class="section-tag" style="background: rgba(255,42,42,0.15); border-color: rgba(255,42,42,0.4); color: #ff6a00;">
-            <i class="fa-solid fa-lock"></i> Acceso Restringido Agentes & Banqueros
-          </span>
-          <h2>Acceso al Panel Administrativo</h2>
-          <p>
-            Gestiona la red de taquillas, monitorea apuestas en vivo, ajusta límites financieros y genera reportes detallados en tiempo real con máxima seguridad y cifrado.
-          </p>
-
-          <div class="admin-features-grid">
-            <div class="admin-feat-item">
-              <i class="fa-solid fa-chart-line"></i>
-              <span>Monitoreo de Apuestas & Parleys</span>
-            </div>
-            <div class="admin-feat-item">
-              <i class="fa-solid fa-sliders"></i>
-              <span>Configuración de Límites & Tablas</span>
-            </div>
-            <div class="admin-feat-item">
-              <i class="fa-solid fa-users-gear"></i>
-              <span>Gestión de Agentes y Taquillas</span>
-            </div>
-            <div class="admin-feat-item">
-              <i class="fa-solid fa-file-invoice-dollar"></i>
-              <span>Contabilidad & Reportes de Caja</span>
-            </div>
+      <div class="faq-grid">
+        <div class="faq-left">
+          <div class="section-header text-start" style="margin-bottom: 2rem;">
+            <h2>PREGUNTAS FRECUENTES</h2>
+            <p>Encuentra respuestas a las preguntas más comunes sobre Ganemos.net y cómo aprovechar al máximo nuestra plataforma.</p>
           </div>
 
-          <a href="http://admin.ganemos.net" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg admin-link-target">
-            <i class="fa-solid fa-right-to-bracket"></i>
-            <span>Ir al Sistema Administrativo</span>
-          </a>
+          <div class="faq-accordion">
+            <div class="faq-item active">
+              <div class="faq-header">
+                <span>01. ¿Cómo afiliar mi banca o negocio a Ganemos.net?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="faq-content">
+                Para afiliar tu banca o agencia a Ganemos.net, ponte en contacto con nuestro equipo comercial a través de WhatsApp. Te asignaremos un ejecutivo de cuenta para configurar tu panel y credenciales.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <span>02. ¿Cómo convertirme en agente u operador?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="faq-content">
+                Para operar como agente de Ganemos.net, solicitas la creación de tu cuenta administrativa. Una vez aprobada, recibirás acceso al panel para parametrizar límites y taquillas bajo tu red.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <span>03. ¿Cómo funciona la impresión térmica de tickets?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="faq-content">
+                Nuestras aplicaciones ejecutan un controlador directo con impresoras de 58mm y 80mm vía USB, Serial o Bluetooth, permitiendo emitir tickets con código de seguridad instantáneamente.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <span>04. ¿Cómo consultar reportes y cierres de caja?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="faq-content">
+                Desde el Panel Administrativo o desde la misma taquilla puedes generar reportes consolidados por fecha, sorteo o vendedor en tiempo real.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <span>05. ¿Cómo contactar al soporte técnico?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="faq-content">
+                Contamos con atención técnica 24 horas al día a través de nuestro botón de soporte directo y WhatsApp de asistencia operativa.
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="admin-action-box">
-          <div class="admin-shield-icon">
-            <i class="fa-solid fa-shield-halved"></i>
+        <!-- Right Side Visual Callout -->
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <div class="demo-banner" style="width: 100%;">
+            <i class="fa-solid fa-comments" style="font-size: 3.5rem; color: var(--brand-yellow); margin-bottom: 1.2rem;"></i>
+            <h3>¿Tienes dudas específicas?</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">
+              Nuestro equipo está disponible en vivo para brindarte asesoría personalizada en la configuración de tus taquillas.
+            </p>
+            <a href="#" class="btn btn-primary btn-lg demo-link-target">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Consultar por WhatsApp</span>
+            </a>
           </div>
-          <h3>Portal Operativo</h3>
-          <p style="font-size: 0.9rem; color: var(--text-muted);">
-            Para acceder al panel web, debes utilizar tus credenciales asignadas de operador o administrador.
-          </p>
-          <a href="http://admin.ganemos.net" target="_blank" rel="noopener noreferrer" class="btn btn-admin admin-link-target" style="width: 100%;">
-            <i class="fa-solid fa-key"></i>
-            <span>Acceso Seguro / Login</span>
-          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Platform Features Section -->
-  <section id="plataforma" class="section-padding">
+  <!-- Demo Request Banner (BetF4 Style) -->
+  <section class="section-padding" style="padding-top: 0;">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">
-          <i class="fa-solid fa-cubes"></i> Módulos de Juego
-        </span>
-        <h2 class="section-title">Solución Integral Whitelabel</h2>
-        <p class="section-subtitle">
-          Diseñado para adaptarse a las demandas del mercado de loterías y sportsbook actual.
-        </p>
-      </div>
-
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon-wrapper">
-            <i class="fa-solid fa-football"></i>
-          </div>
-          <h3>Apuestas Deportivas en Vivo</h3>
-          <p>
-            Líneas de juego actualizadas en tiempo real para las principales ligas del mundo (Fútbol, Béisbol MLB, Baloncesto NBA, Tenis, etc.) con combinaciones parley avanzadas.
-          </p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon-wrapper">
-            <i class="fa-solid fa-clover"></i>
-          </div>
-          <h3>Loterías & Animalitos</h3>
-          <p>
-            Módulo especializado para sorteos tradicionales, resultados instantáneos, triples y jugadas de animalitos con algoritmos de liquidación automática de premios.
-          </p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon-wrapper">
-            <i class="fa-solid fa-print"></i>
-          </div>
-          <h3>Impresión Térmica Directa</h3>
-          <p>
-            Imprime comprobantes y tickets de apuestas con formato optimizado, códigos de seguridad barra/QR y validación en línea instantánea.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Installation Guide Section -->
-  <section id="instalacion" class="section-padding">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">
-          <i class="fa-solid fa-circle-question"></i> Ayuda e Instalación
-        </span>
-        <h2 class="section-title">Guía de Instalación Paso a Paso</h2>
-        <p class="section-subtitle">
-          Sigue las instrucciones según el dispositivo en el que desees instalar la aplicación.
-        </p>
-      </div>
-
-      <div class="guide-tabs-container">
-        <div class="tab-buttons">
-          <button class="tab-btn active" data-tab="windows">
-            <i class="fa-brands fa-windows"></i> Windows PC
-          </button>
-          <button class="tab-btn" data-tab="android">
-            <i class="fa-brands fa-android"></i> Celular Android (APK)
-          </button>
-        </div>
-
-        <!-- Windows Steps -->
-        <div id="tab-windows" class="tab-content active">
-          <div class="steps-timeline">
-            <div class="step-card">
-              <div class="step-number">1</div>
-              <h4>Descarga el Ejecutable</h4>
-              <p>Presiona el botón "Descargar para Windows (.exe)" en la parte superior para bajar el instalador oficial.</p>
-            </div>
-            <div class="step-card">
-              <div class="step-number">2</div>
-              <h4>Ejecuta e Instala</h4>
-              <p>Abre el archivo descargado <code>GanemosDesktop_Installer.exe</code> y confirma los permisos de administrador.</p>
-            </div>
-            <div class="step-card">
-              <div class="step-number">3</div>
-              <h4>Conecta tu Impresora</h4>
-              <p>Abre la app, selecciona la impresora térmica USB en la pantalla de ajustes y comienza a operar tu taquilla.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Android Steps -->
-        <div id="tab-android" class="tab-content">
-          <div class="steps-timeline">
-            <div class="step-card">
-              <div class="step-number">1</div>
-              <h4>Descarga el Archivo APK</h4>
-              <p>Baja el archivo APK directamente desde tu celular o escanea el código QR con la cámara.</p>
-            </div>
-            <div class="step-card">
-              <div class="step-number">2</div>
-              <h4>Permitir Fuentes Desconocidas</h4>
-              <p>Si tu navegador bloquea la instalación, ve a Ajustes de Android -> Seguridad -> Habilitar "Instalar Apps Desconocidas".</p>
-            </div>
-            <div class="step-card">
-              <div class="step-number">3</div>
-              <h4>Instalar e Iniciar Sesión</h4>
-              <p>Abre el archivo `.apk` descargado, presiona Instalación y accede con tus credenciales de agencia.</p>
-            </div>
-          </div>
-        </div>
+      <div class="demo-banner">
+        <h2>Obtén una demo de nuestro sistema</h2>
+        <p>Descubre cómo nuestro sistema puede transformar la operatividad de tus apuestas y loterías. Obtén acceso a una prueba guiada y explora todas las funcionalidades que ofrecemos para tu negocio.</p>
+        <a href="#" class="btn btn-primary btn-lg demo-link-target">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Solicitar Demo Gratuita</span>
+        </a>
       </div>
     </div>
   </section>
@@ -433,66 +438,97 @@
       <button class="modal-close-btn" id="modalCloseBtn">
         <i class="fa-solid fa-xmark"></i>
       </button>
-
-      <div class="modal-icon-header">
+      <div style="font-size: 2.5rem; color: var(--brand-yellow); margin-bottom: 1rem;">
         <i class="fa-solid fa-cloud-arrow-down"></i>
       </div>
-
-      <h3 class="modal-title" id="modalTitle">Iniciando Descarga...</h3>
-      <p class="modal-text" id="modalText">
-        Tu archivo de instalación se está procesando. Por favor espera unos segundos.
+      <h3 id="modalTitle">Iniciando Descarga...</h3>
+      <p id="modalText" style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">
+        Tu archivo de instalación se está procesando. Por favor espera un momento.
       </p>
-
       <div class="download-progress-bar">
         <div class="download-progress-fill" id="modalProgressBar"></div>
       </div>
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="footer">
+  <!-- Footer Section (BetF4 Inspired) -->
+  <footer class="footer-section">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="assets/images/logolarge.png" alt="Ganemos.net Logo Footer" style="height: 42px;">
-          <p>
-            Solución Whitelabel de nivel profesional para bancas de lotería y apuestas deportivas en línea. Plataforma optimizada para alto rendimiento.
-          </p>
+      <!-- Contact bar -->
+      <div class="footer-contact-grid">
+        <div class="footer-contact-box">
+          <div class="footer-contact-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="footer-contact-text">
+            <span>Teléfono oficial</span>
+            <h5>+58 412-0000000</h5>
+          </div>
         </div>
 
-        <div class="footer-col">
-          <h4>Descargas</h4>
-          <ul class="footer-links">
-            <li><a href="#descargas" data-download-type="windows">Windows Desktop (.exe)</a></li>
-            <li><a href="#descargas" data-download-type="android">Android App (.apk)</a></li>
-            <li><a href="#instalacion">Guía de Instalación</a></li>
-          </ul>
+        <div class="footer-contact-box">
+          <div class="footer-contact-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="footer-contact-text">
+            <span>Correo oficial</span>
+            <h5>contacto@ganemos.net</h5>
+          </div>
         </div>
 
-        <div class="footer-col">
-          <h4>Accesos</h4>
-          <ul class="footer-links">
-            <li><a href="#admin">Panel Administrativo</a></li>
-            <li><a href="#admin">Portal de Taquillas</a></li>
-            <li><a href="#plataforma">Módulos de Juego</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Soporte Técnico</h4>
-          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
-            Servidores monitoreados 24/7 con disponibilidad continua.
-          </p>
-          <div class="status-badge" style="display: inline-flex;">
-            <span class="status-dot"></span>
-            <span>Todos los servicios operativos</span>
+        <div class="footer-contact-box">
+          <div class="footer-contact-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="footer-contact-text">
+            <span>Ubicación</span>
+            <h5>Venezuela</h5>
           </div>
         </div>
       </div>
 
+      <!-- Main Footer Body -->
+      <div class="footer-main-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logolarge.png" alt="Ganemos.net Footer Logo" style="height: 44px;">
+          <p>
+            Ganemos.net - El mejor sistema de loterías y apuestas deportivas en línea. Plataforma Whitelabel segura, rápida y optimizada para agencias y taquillas.
+          </p>
+          <div style="display: flex; gap: 1rem;">
+            <a href="#" class="demo-link-target" style="color: var(--brand-yellow); font-size: 1.2rem;" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" style="color: var(--brand-yellow); font-size: 1.2rem;" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" style="color: var(--brand-yellow); font-size: 1.2rem;" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" style="color: var(--brand-yellow); font-size: 1.2rem;" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#descargas">Descargas (.exe / .apk)</a></li>
+            <li><a href="http://taquilla.ganemos.net" target="_blank" rel="noopener noreferrer" class="taquilla-link-target">Ir a Taquilla</a></li>
+            <li><a href="http://admin.ganemos.net" target="_blank" rel="noopener noreferrer" class="admin-link-target">Acceso Administrativo</a></li>
+            <li><a href="#faq">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Boletín Informativo</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+            Suscríbete a nuestras noticias y entérate de nuevas loterías y actualizaciones del sistema.
+          </p>
+          <form onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');" style="display: flex; flex-direction: column; gap: 0.6rem;">
+            <input type="email" placeholder="Tu correo electrónico" required style="padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.05); color: #fff; outline: none;">
+            <button type="submit" class="btn btn-primary" style="padding: 0.75rem;">
+              <span>INSCRIBIRSE <i class="fa-solid fa-circle-chevron-right"></i></span>
+            </button>
+          </form>
+        </div>
+      </div>
+
       <div class="footer-bottom">
-        <p>&copy; 2026 Ganemos.net - Todos los derechos reservados. Plataforma Whitelabel de Loterías y Deportes.</p>
-        <p><i class="fa-solid fa-shield"></i> Cifrado de conexión SSL 256-bit</p>
+        <p>&copy; 2026 <a href="#" style="color: var(--brand-yellow); text-decoration: none;">Ganemos.net</a> - Todos los derechos reservados. Sistema de Loterías y Apuestas Deportivo.</p>
       </div>
     </div>
   </footer>
