@@ -1,0 +1,18 @@
+# System / OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Executable / Binary packages (descomentar si no deseas subir los instaladores reales a GitHub)
+# downloads/*.exe
+# downloads/*.apk
+
+# Temporary files
+*.tmp
+*.log
