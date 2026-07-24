@@ -84,6 +84,6 @@ const CONFIG = {
 5. Asocia tu repositorio remoto de GitHub y sube los cambios:
    ```bash
    git branch -M main
-   git remote add origin https://github.com/TU-USUARIO/landing-ganemos.git
+   git remote add origin https://github.com/DavGz/ganemosdownloads.git
    git push -u origin main
    ```
