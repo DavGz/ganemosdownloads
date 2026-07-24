@@ -663,6 +663,75 @@ body {
   margin-bottom: 1.2rem;
 }
 
+/* Step-by-Step Mobile APK Installation Guide */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+  margin-top: 2rem;
+}
+
+.step-card {
+  background: var(--grad-dark-card);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.6rem;
+  position: relative;
+  transition: var(--transition-normal);
+}
+
+.step-card:hover {
+  border-color: var(--brand-orange);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.step-badge {
+  width: 44px;
+  height: 44px;
+  background: var(--grad-brand-horizontal);
+  color: #08080b;
+  font-weight: 900;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 15px rgba(255, 106, 0, 0.4);
+}
+
+.step-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #ffffff;
+}
+
+.step-card p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.step-alert-box {
+  background: rgba(255, 106, 0, 0.12);
+  border: 1px solid rgba(255, 106, 0, 0.35);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--brand-yellow);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.step-alert-box i {
+  color: var(--brand-orange);
+  font-size: 1.1rem;
+  margin-top: 0.1rem;
+}
+
 .qr-box {
   width: 75px;
   height: 75px;
